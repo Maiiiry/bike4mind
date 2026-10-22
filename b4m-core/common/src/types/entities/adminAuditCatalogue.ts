@@ -148,6 +148,16 @@ export const ADMIN_AUDIT_CATALOGUE = {
   'user.api_key.rate_limit_reset': { category: 'access', severity: 'info', write: 'bestEffort' },
   'org.data_lake.embedding_spend_reset': { category: 'credits', severity: 'notice', write: 'strict' },
   'user.storage.recalculated': { category: 'support', severity: 'info', write: 'bestEffort' },
+  // Handler coverage: signup and org access
+  'org.partner_signup_rule.created': { category: 'access', severity: 'notice', write: 'strict' },
+  'org.partner_signup_rule.updated': { category: 'access', severity: 'notice', write: 'strict' },
+  'org.partner_signup_rule.deleted': { category: 'access', severity: 'notice', write: 'strict' },
+  'org.partner_signup_rule.backfilled': { category: 'access', severity: 'notice', write: 'bestEffort' },
+  'user.reg_invite.migrated': { category: 'account', severity: 'critical', write: 'bestEffort' },
+  'user.reg_invite.updated': { category: 'access', severity: 'notice', write: 'strict' },
+  'user.reg_invite.created': { category: 'access', severity: 'notice', write: 'strict' },
+  'user.waitlist_subscriber.deleted': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'org.created': { category: 'org', severity: 'notice', write: 'bestEffort' },
 
   'audit.exported': { category: 'support', severity: 'info', write: 'bestEffort' },
 } as const satisfies Record<string, AdminAuditCatalogueEntry>;
