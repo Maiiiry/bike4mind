@@ -148,6 +148,17 @@ export const ADMIN_AUDIT_CATALOGUE = {
   'user.api_key.rate_limit_reset': { category: 'access', severity: 'info', write: 'bestEffort' },
   'org.data_lake.embedding_spend_reset': { category: 'credits', severity: 'notice', write: 'strict' },
   'user.storage.recalculated': { category: 'support', severity: 'info', write: 'bestEffort' },
+  // Handler coverage: telemetry, backfills and health
+  'ops.context_telemetry.deleted': { category: 'support', severity: 'notice', write: 'bestEffort' },
+  'ops.context_telemetry.analyzed': { category: 'support', severity: 'notice', write: 'bestEffort' },
+  'ops.context_telemetry.issue_created': { category: 'support', severity: 'notice', write: 'bestEffort' },
+  'ops.context_telemetry.test_run': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'ops.mementos.reembedded': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'ops.memory_ledger.reembedded': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'ops.overwatch.first_seen_backfilled': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'ops.message_counts.recalculated': { category: 'support', severity: 'info', write: 'bestEffort' },
+  'system_health.integration_override_set': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'system_health.integration_probe_run': { category: 'support', severity: 'info', write: 'bestEffort' },
 
   'audit.exported': { category: 'support', severity: 'info', write: 'bestEffort' },
 } as const satisfies Record<string, AdminAuditCatalogueEntry>;
