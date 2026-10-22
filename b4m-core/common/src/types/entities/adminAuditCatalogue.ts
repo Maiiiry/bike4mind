@@ -148,6 +148,13 @@ export const ADMIN_AUDIT_CATALOGUE = {
   'user.api_key.rate_limit_reset': { category: 'access', severity: 'info', write: 'bestEffort' },
   'org.data_lake.embedding_spend_reset': { category: 'credits', severity: 'notice', write: 'strict' },
   'user.storage.recalculated': { category: 'support', severity: 'info', write: 'bestEffort' },
+  // Handler coverage: security and trust and safety
+  'security.blocked_ip.added': { category: 'access', severity: 'critical', write: 'strict' },
+  'security.blocked_ip.removed': { category: 'access', severity: 'critical', write: 'strict' },
+  'security.blocked_ip.auto_added': { category: 'access', severity: 'critical', write: 'strict' },
+  'moderation.incident.verdict_recorded': { category: 'support', severity: 'critical', write: 'strict' },
+  'moderation.published_artifact.taken_down': { category: 'support', severity: 'critical', write: 'strict' },
+  'moderation.published_artifact.takedown_reverted': { category: 'support', severity: 'critical', write: 'strict' },
 
   'audit.exported': { category: 'support', severity: 'info', write: 'bestEffort' },
 } as const satisfies Record<string, AdminAuditCatalogueEntry>;
