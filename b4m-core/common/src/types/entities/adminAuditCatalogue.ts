@@ -148,6 +148,19 @@ export const ADMIN_AUDIT_CATALOGUE = {
   'user.api_key.rate_limit_reset': { category: 'access', severity: 'info', write: 'bestEffort' },
   'org.data_lake.embedding_spend_reset': { category: 'credits', severity: 'notice', write: 'strict' },
   'user.storage.recalculated': { category: 'support', severity: 'info', write: 'bestEffort' },
+  // Handler coverage: system prompts and agent ops
+  'settings.system_prompt.created': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.updated': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.deleted': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.version_created': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.version_saved': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.version_switched': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.system_prompt.reset': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.agent_ops.updated': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.agent_ops.version_added': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.agent_ops.seeded': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.agent_ops.version_activated': { category: 'settings', severity: 'notice', write: 'bestEffort' },
+  'settings.agent_ops.repaired': { category: 'settings', severity: 'info', write: 'bestEffort' },
 
   'audit.exported': { category: 'support', severity: 'info', write: 'bestEffort' },
 } as const satisfies Record<string, AdminAuditCatalogueEntry>;
