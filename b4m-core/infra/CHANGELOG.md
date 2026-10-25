@@ -1,5 +1,15 @@
 # @bike4mind/infra
 
+## 6.0.0
+
+### Major Changes
+
+- [#5640](https://github.com/Bike4Mind/bike4mind/pull/5640) [`b8146f3`](https://github.com/Bike4Mind/bike4mind/commit/b8146f33b24b69ee9e3762ab454e9a1b65cad880) Thanks [@jjmarfa](https://github.com/jjmarfa)! - remove the legacy What's New generation pipeline
+
+### Minor Changes
+
+- [#5673](https://github.com/Bike4Mind/bike4mind/pull/5673) [`906bf96`](https://github.com/Bike4Mind/bike4mind/commit/906bf96005592c4a384f777729dae4737d08db1f) Thanks [@erikbethke](https://github.com/erikbethke)! - render owner-only thumbnails for live artifacts
+
 ## 5.0.0
 
 ### Major Changes
